@@ -4,4 +4,4 @@ a.out
 CMakeCache.txt
 CMakeFiles
 Makefile
-*.cmake
+**.cmake
