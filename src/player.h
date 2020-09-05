@@ -4,7 +4,7 @@
 #include <iostream>
 #include <faction.h>
 #include <playermat.h>
-
+#include "constants.h"
 
 class Player{
   public:
