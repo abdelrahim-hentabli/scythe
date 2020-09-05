@@ -10,9 +10,9 @@ class Player{
   public:
     
   private:
-    unsigned int coins;
-    unsigned char power;
-    unsigned char popularity;
+    int coins;
+    int power;
+    int popularity;
     Faction* faction;
     PlayerMat* playerMat;
 

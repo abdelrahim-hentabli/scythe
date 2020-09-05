@@ -5,13 +5,13 @@
 
 class PlayerMat{
   public:
-
+    PlayerMat();
+    PlayerMat(std::string matName, int matObjectiveCards, int matPopularity, int matCoins);
   private:
     std::string name;
-    unsigned char objectiveCards;
-    unsigned char popularity;
-    unsigned char coins;
-    
+    int objectiveCards;
+    int popularity;
+    int coins; 
 
 }
 #endif

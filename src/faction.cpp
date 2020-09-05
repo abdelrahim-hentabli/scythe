@@ -10,11 +10,9 @@ Faction::Faction(){
   homeBase = nullptr;
 };
 
-Faction::Faction(const std::string &factionName, 
-    const unsigned char &factionPower,
-    const unsigned char &factionCombatCards,
-    const unsigned char &factionAbility,
-    unsigned char *factionMechAbility, Hex* factionHomeBase){
+Faction::Faction(const std::string &factionName, const int &factionPower,
+    const int &factionCombatCards, const int &factionAbility,
+    int *factionMechAbility, Hex* factionHomeBase){
   name = factionName;
   power = factionPower;
   combatCards = factionCombatCards;

@@ -8,15 +8,18 @@
 class Faction{
   public:
     Faction();
-    Faction(const std::string &factionName, const unsigned char &factionPower, 
-      const unsigned char &factionCombatCards, 
-      const unsigned char &factionAbility,
-      unsigned char *factionMechAbility, Hex* factionHomeBase);
+    Faction(const std::string &factionName, const int &factionPower, 
+      const int &factionCombatCards, const int &factionAbility,
+      int *factionMechAbility, Hex* factionHomeBase);
     friend std::ostream& operator << (std::ostream &out, const Faction& p){
-      out<<p.name<<'\n'<<"Power: "<<int(p.power)<<"    Combat Cards: "<<
-        int(p.combatCards)<<"    Main Ability: "<<ABILITIES[p.ability]<<'\n';
+      out<<p.name<<'\n';
+      out<<"Power: "<<p.power<<"    Combat Cards: ";
+      out<<p.combatCards<<"    Main Ability: "<<ABILITIES[p.ability]<<'\n';
       out<<"Mech Abilities:    ";
       for(int i = 0; i < 5; i++){
+        if(i == 0){
+          out<<"River Walking -> ";
+        }
         out<<ABILITIES[p.mechAbilities[i]];
         if(i == 0){
           out<<" , ";
@@ -31,11 +34,11 @@ class Faction{
     }
   private:
     std::string name;
-    unsigned char power;
-    unsigned char combatCards;
-    unsigned char ability;
+    int power;
+    int combatCards;
+    int ability;
     //riverwalk is first 2 abilities
-    unsigned char *mechAbilities;
+    int *mechAbilities;
     bool deployedMech[5];
     Hex* homeBase;
 };
