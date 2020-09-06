@@ -5,5 +5,5 @@ SET(CMAKE_CXX_STANDARD 11)
 project (SCYTHE)
 
 ADD_EXECUTABLE(scythe
-  constants.cpp faction.cpp main.cpp
+  constants.cpp playermat.cpp faction.cpp main.cpp
   )
