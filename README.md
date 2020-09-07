@@ -1,5 +1,9 @@
 # SCYTHE
 Terminal Boardgame of Scythe
+
+## Dependencies
+This project requires a C++ compiler and CMake.
+
 ## Installing
 To run the code, you first need to clone the repository.
 ```
