@@ -9,9 +9,13 @@ const int NUMBER_OF_ABILITIES = 21;
 const int NUMBER_OF_FACTIONS = 5;
 const int NUMBER_OF_PLAYER_MATS = NUMBER_OF_FACTIONS;
 
-enum Faction { Crimea, Nordic, Polania, Rusviet, Saxony};
+enum Faction_Name { Crimea, Nordic, Polania, Rusviet, Saxony};
 
-enum PlayerMat { Industrial, Engineering, Patriotic, Innovative, Agricultural};
+enum Player_Mat { Industrial, Engineering, Patriotic, Innovative, Agricultural};
+
+enum Top_Row { Move, Bolster, Trade, Produce};
+
+enum Bot_Row { Upgrade, Deploy, Build, Enlist};
 
 //abilities [5-9] are water walking to those hexes
 const std::string ABILITIES[NUMBER_OF_ABILITIES] = {"Coercion", "Swim", 
@@ -34,8 +38,8 @@ extern int FACTION_MECH_ABILITIES[NUMBER_OF_FACTIONS][5];
 const std::string PLAYER_MAT_NAMES[NUMBER_OF_PLAYER_MATS] = 
   {"Industrial", "Engineering", "Patriotic", "Innovative", "Agricultural"};
 
-const int PLAYER_MAT_RANK[NUMBER_OF_PLAYER_MATS] = [1,2,3,4,5];
-const int PLAYER_MAT_POPULARITY[NUMBER_OF_PLAYER_MATS] = [2,2,2,3,4];
-const int PLAYER_MAT_COINS[NUMBER_OF_PLAYER_MATS] = [4,5,6,5,7];
+const int PLAYER_MAT_RANK[NUMBER_OF_PLAYER_MATS] = {1,2,3,4,5};
+const int PLAYER_MAT_POPULARITY[NUMBER_OF_PLAYER_MATS] = {2,2,2,3,4};
+const int PLAYER_MAT_COINS[NUMBER_OF_PLAYER_MATS] = {4,5,6,5,7};
 
 #endif
