@@ -9,9 +9,13 @@ const int NUMBER_OF_ABILITIES = 21;
 const int NUMBER_OF_FACTIONS = 5;
 const int NUMBER_OF_PLAYER_MATS = NUMBER_OF_FACTIONS;
 
-enum Faction { Crimea, Nordic, Polania, Rusviet, Saxony};
+enum Faction_Name { Crimea, Nordic, Polania, Rusviet, Saxony};
 
-enum PlayerMat { Industrial, Engineering, Patriotic, Innovative, Agricultural};
+enum Player_Mat { Industrial, Engineering, Patriotic, Innovative, Agricultural};
+
+enum Top_Row { Move, Bolster, Trade, Produce};
+
+enum Bot_Row { Upgrade, Deploy, Build, Enlist};
 
 //abilities [5-9] are water walking to those hexes
 const std::string ABILITIES[NUMBER_OF_ABILITIES] = {"Coercion", "Swim", 

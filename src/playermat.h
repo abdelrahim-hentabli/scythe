@@ -10,7 +10,7 @@ class PlayerMat{
       const int &matPopularity, const int &matCoins);
     friend std::ostream& operator <<(std::ostream& out, const PlayerMat& p){
       out<<p.name<<'\n';
-      out<<"Objective Cards: "<<p.objectiveCards<<"    Popularity: "<<
+      out<<"Objective Cards: "<<p.objectiveCards<<"    Popularity: ";
       out<<p.popularity<<"    Coins: "<<p.coins<<'\n';
     }
   private:
@@ -18,6 +18,6 @@ class PlayerMat{
     int objectiveCards;
     int popularity;
     int coins; 
-
-}
+    
+};
 #endif
