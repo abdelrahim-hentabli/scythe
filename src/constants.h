@@ -56,15 +56,15 @@ const std::string ABILITIES_DESCRIPTION[NUMBER_OF_ABILITIES] = {
   may complete both of their objective cards (they don't discard the second card after\
   achieving the first), and they are not limited to 2 combat victory stars. If Saxony has\
   available stars, after winning combat, they must place the star.", 
-  //Farm
+  //Farm (Rusviet and Crimea)
   "Your character and mechs can move across rivers onto farms", 
-  //Tundra
+  //Tundra (Crimea)
   "Your character and mechs can move across rivers onto tundras", 
-  //Forest
+  //Forest (Saxony and Nordic)
   "Your character and mechs can move across rivers onto forests", 
-  //Mountain
+  //Mountain (Saxony, Polania, and Nordic)
   "Your character and mechs can move across rivers onto mountains", 
-  //Village
+  //Village (Rusviet and Polania)
   "Your character and mechs can move across rivers onto villages", 
   //Wayfare (Crimea)
   "Your character and mechs may move from a territory or home base to any inactive faction's home\
