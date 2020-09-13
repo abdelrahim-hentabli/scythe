@@ -29,6 +29,18 @@ class Faction{
       <<std::string(5, ' ')<<"|\n";
       
       out<<"|    Mech Abilities:"<<std::string(FACTION_MAT_SIZE - 21, ' ')<<"|\n";
+      
+      out<<"|   ";
+      for(int i = 0; i < 4; i++){
+        out<<std::string((FACTION_MAT_SIZE-2)/5 - 3, ' ');
+        if(p.deployedMech[i]){
+          out<<"   ";
+        }
+        else{
+          out<<"/o\\";
+        }
+      }
+      out<<std::string((FACTION_MAT_SIZE-2)/5 + FACTION_MAT_SIZE%5,' ')<<"|\n";
 
       std::string temp = "";
       for(int i = 0; i < 5; i++){
@@ -54,7 +66,7 @@ class Faction{
     int ability;
     //riverwalk is first 2 abilities
     int *mechAbilities;
-    bool deployedMech[5];
+    bool deployedMech[4];
     Hex* homeBase;
 };
 
