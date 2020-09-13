@@ -34,8 +34,8 @@ extern int FACTION_MECH_ABILITIES[NUMBER_OF_FACTIONS][5];
 const std::string PLAYER_MAT_NAMES[NUMBER_OF_PLAYER_MATS] = 
   {"Industrial", "Engineering", "Patriotic", "Innovative", "Agricultural"};
 
-const int PLAYER_MAT_RANK[NUMBER_OF_PLAYER_MATS] = [1,2,3,4,5];
-const int PLAYER_MAT_POPULARITY[NUMBER_OF_PLAYER_MATS] = [2,2,2,3,4];
-const int PLAYER_MAT_COINS[NUMBER_OF_PLAYER_MATS] = [4,5,6,5,7];
+const int PLAYER_MAT_RANK[NUMBER_OF_PLAYER_MATS] = {1,2,3,4,5};
+const int PLAYER_MAT_POPULARITY[NUMBER_OF_PLAYER_MATS] = {2,2,2,3,4};
+const int PLAYER_MAT_COINS[NUMBER_OF_PLAYER_MATS] = {4,5,6,5,7};
 
 #endif
