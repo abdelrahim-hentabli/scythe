@@ -16,6 +16,7 @@ mkdir build
 ```
 Finally, build and compile the project.
 ```
+cd build
 cmake ..
 make
 ```
