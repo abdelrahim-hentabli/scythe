@@ -8,6 +8,28 @@
 
 class Player{
   public:
+    //Constructors & Destructor
+    Player();
+    Player(Faction* f, PlayerMat* p);
+    //Getters
+    int getCoins();
+    int getPower();
+    int getPopularity();
+    Faction* getFaction();
+    PlayerMat* getPlayerMat();
+    //Setters
+    void setCoins(int val);
+    void setPower(int val);
+    void setPopularity(int val);
+    void setFaction(Faction* f);
+    void setPlayerMat(PlayerMat* p);
+    //Incrementers & Decrementers 
+    void addCoins(int val);
+    void addPower(int val);
+    void addPopularity(int val);
+    void subCoins(int val);
+    void subPower(int val);
+    void subPopularity(int val);
     
   private:
     int coins;
