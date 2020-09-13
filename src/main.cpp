@@ -16,5 +16,5 @@ int main(int argc, char  *argv[]){
     std::cout<<*factions[i]<<'\n';
   }
 
-  return 1;
+  return 0;
 }

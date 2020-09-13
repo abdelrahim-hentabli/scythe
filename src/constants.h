@@ -27,8 +27,8 @@ const std::string ABILITIES_DESCRIPTION[NUMBER_OF_ABILITIES] = {"Coercion",
   "Swim", "Meander", "Relentless", "Dominate", "Farm", "Tundra", "Forest", 
   "Mountain", "Village", "Wayfare", "Scout", "Speed", "Seaworthy", "Artillery", "Submerge","Camaraderie", "Township", "People's Army", "Underpass", "Disarm"};
 
-const std::string FACTION_NAMES[NUMBER_OF_FACTIONS] = {"Crimea", "Nordic", 
-  "Polania", "Rusviet", "Saxony"};
+const std::string FACTION_NAMES[NUMBER_OF_FACTIONS] = {"CRIMEA", "NORDIC", 
+  "POLANIA", "RUSVIET", "SAXONY"};
 
 const int FACTION_POWERS[NUMBER_OF_FACTIONS] = {5, 4, 2, 3, 1};
 const int FACTION_COMBAT_CARDS[NUMBER_OF_FACTIONS] = {0, 1, 3, 2, 4};
