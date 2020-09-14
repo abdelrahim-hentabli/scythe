@@ -10,15 +10,22 @@ Player::Player() {
   popularity = 0;
   faction = NULL;
   playerMat = NULL;
+  for(int i = 0; i < 4; i++) {
+    objectiveCards[i] = 0;
+  }
 }
 
 // Player::Player(Faction* f, PlayerMat* p){
 //   faction = f;
 //   playerMat = p;
-//   coins = p->coins;
+//   coins = p->getCoins();
 // }
 
-int Player::getCoins() {
+int* Player::getObjectiveCards(){
+  return objectiveCards;
+}
+
+int Player::getCoins(){
   return coins;
 }
 
@@ -78,6 +85,14 @@ void Player::setPlayerMat(PlayerMat* p){
   playerMat = p;
 }
 
+void Player::pushObjectiveCard(int card) {
+  if(card<2 || card>5){
+    cout<<"Error adding objective card for Player\n";
+    return;
+  }
+  objectiveCards[card-2] += 1;
+}
+
 void Player::addCoins(int val){
   if(val < 0){
     cout<<"Error adding coins in Player\n";
@@ -100,6 +115,14 @@ void Player::addPopularity(int val){
     return;
   }
   popularity += val;
+}
+
+void Player::popObjectiveCard(int card) {
+  if(card<2 || card>5 || objectiveCards[card-2]<1){
+    cout<<"Error popping objective card for Player\n";
+    return;
+  }
+  objectiveCards[card-2] -= 1;
 }
 
 void Player::subCoins(int val){
