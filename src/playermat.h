@@ -9,7 +9,8 @@ class PlayerMat{
     //Constructors
     PlayerMat();
     PlayerMat(const std::string &matName, const int &matObjectiveCards, 
-      const int &matPopularity, const int &matCoins);
+      const int &matPopularity, const int &matCoins, Top_Row fTopRow,
+      Bot_Row fBotRow);
     //Operators
     friend std::ostream& operator <<(std::ostream& out, const PlayerMat& p){
       out<<p.name<<'\n';

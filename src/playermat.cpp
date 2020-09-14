@@ -7,8 +7,8 @@ PlayerMat::PlayerMat(){
   coins = 0;
 }
 
-PlayerMat::PlayerMat(const std::string &matName, const int &matObjectiveCards,/
-    const int &matPopularity, const int &matCoins, Top_Row fTopRow, /
+PlayerMat::PlayerMat(const std::string &matName, const int &matObjectiveCards,
+    const int &matPopularity, const int &matCoins, Top_Row fTopRow, 
     Bot_Row fBotRow){
   name = matName;
   objectiveCards = matObjectiveCards;
