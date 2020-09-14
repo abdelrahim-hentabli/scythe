@@ -34,8 +34,8 @@ class PlayerMat{
     int objectiveCards;
     int popularity;
     int coins; 
-    Top_Row top_row_order[4];
-    Bot_Row bot_row_order[4];
+    Top_Row topRowOrder[4];
+    Bot_Row botRowOrder[4];
     
 
 };
