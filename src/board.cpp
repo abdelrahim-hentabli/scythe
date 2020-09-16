@@ -1,14 +1,22 @@
 #include "board.h"
 
 Board::Board(){
+  
   hexagons = new Hex*[9];
-  hexagons[0] = new Hex[2];
-  hexagons[1] = new Hex[6];
-  hexagons[2] = new Hex[7];
-  hexagons[3] = new Hex[8];
-  hexagons[4] = new Hex[7];
-  hexagons[5] = new Hex[7];
-  hexagons[6] = new Hex[7];
-  hexagons[7] = new Hex[8];
-  hexagons[8] = new Hex[2];
+  rowSizes = new int[9];
+
+  rowSizes[0] = 2;
+  rowSizes[1] = 6;
+  rowSizes[2] = 7;
+  rowSizes[3] = 8;
+  rowSizes[4] = 7;
+  rowSizes[5] = 7;
+  rowSizes[6] = 7;
+  rowSizes[7] = 8;
+  rowSizes[8] = 2;
+  
+  for(int i = 0; i < 9; i++){
+    hexagons[i] = new Hex[rowSizes[i]];
+  }
+
 }

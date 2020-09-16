@@ -11,6 +11,8 @@ class Board{
     
   private:
     Hex **hexagons;
+    int *rowSizes;
+    int **hexLocations;
     std::map<Hex*, Hex*> edges;
 };
 #endif 
