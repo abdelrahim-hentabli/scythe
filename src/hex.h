@@ -10,8 +10,8 @@ class Hex{
   public:
     Hex(); 
     Hex(Tile_Type tt); 
-    setTileType(Tile_Type tt);
-    getTileType(Tile_Type tt);
+    Tile_Type getTileType();
+    void setTileType(Tile_Type tt);
   private:
     Tile_Type hexType;
     std::vector<Piece*> pieces;
