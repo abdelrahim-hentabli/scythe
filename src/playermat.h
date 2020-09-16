@@ -10,10 +10,12 @@ class PlayerMat{
     PlayerMat();
     PlayerMat(const std::string &matName, const int &matObjectiveCards, 
       const int &matPopularity, const int &matCoins);
-    
     //Operators
     friend std::ostream& operator <<(std::ostream& out, const PlayerMat& p);
     //Getters
+    int getObjectiveCards();
+    int getPopularity();
+    int getCoins();
     //Top Row Actions
     void move();
     void bolster();
@@ -26,12 +28,13 @@ class PlayerMat{
     void enlist();
 
   private:
-    std::string name;
-    int objectiveCards;
-    int popularity;
-    int coins; 
+    std::string name; //e.g. agricultural, industrial
     Top_Row top_row_order[4];
     Bot_Row bot_row_order[4];
+    //Starting values
+    int objectiveCards; 
+    int popularity;
+    int coins; 
     
 
 };
