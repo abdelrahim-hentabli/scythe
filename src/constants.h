@@ -14,8 +14,9 @@ enum Faction_Name { Crimea, Nordic, Polania, Rusviet, Saxony};
 enum Player_Mat { Industrial, Engineering, Patriotic, Innovative, Agricultural};
 
 enum Top_Row { Move, Bolster, Trade, Produce};
-
 enum Bot_Row { Upgrade, Deploy, Build, Enlist};
+
+enum Tile_Type { Farm, Tundra, Forest, Mountain, Village, Lake , Base};
 
 //abilities [5-9] are water walking to those hexes
 const std::string ABILITIES[NUMBER_OF_ABILITIES] = {"Coercion", "Swim", 
