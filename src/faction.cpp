@@ -7,6 +7,10 @@ Faction::Faction(){
   ability = 0;
   ability = FACTION_ABILITIES[0];
   mechAbilities = FACTION_MECH_ABILITIES[0];
+  for(int i = 0; i < 4; i++){
+    deployedMech[i] = 0;
+    enlistedRecruits[i] = 0;
+  }
   homeBase = nullptr;
 };
 
@@ -18,6 +22,10 @@ Faction::Faction(const std::string &factionName, const int &factionPower,
   combatCards = factionCombatCards;
   ability = factionAbility;
   mechAbilities = factionMechAbility;
+  for(int i = 0; i < 4; i++){
+    deployedMech[i] = 0;
+    enlistedRecruits[i] = 0;
+  }
   homeBase = factionHomeBase;
 };
 
@@ -67,4 +75,36 @@ std::ostream& operator<<(std::ostream&out, const Faction& f)
   out<<" \\ "<<std::string( (FACTION_MAT_SIZE - 6 - temp.size()) / 2 + (FACTION_MAT_SIZE -6- temp.size()) %2, ' ')<<temp\
   <<std::string( (FACTION_MAT_SIZE - 6 - temp.size()) /2, ' ')<<" / \n";
   return out<<"  "<<std::string(FACTION_MAT_SIZE-4, '-')<<"  ";
+}
+
+int Faction::getPower(){
+  return power;
+}
+
+int Faction::getCombatCards(){
+  return combatCards;
+}
+
+int Faction::getAbility(){
+  return ability;
+}
+
+int* Faction::getMechAbilities(){
+  return mechAbilities;
+}
+
+void Faction::changeDeployArr(int mech){
+  if( mech<0 || mech>3 ){
+    std::cout<<"Unable to deploy that mech in Faction\n";
+    return;
+  }
+  deployedMech[mech]=1;
+}
+
+void Faction::changeEnlistArr(int recruit){
+  if( recruit<0 || recruit>3 ){
+    std::cout<<"Unable to enlist that recruit in Faction\n";
+    return;
+  }
+  enlistedRecruits[recruit]=1;
 }
