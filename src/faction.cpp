@@ -7,6 +7,10 @@ Faction::Faction(){
   ability = 0;
   ability = FACTION_ABILITIES[0];
   mechAbilities = FACTION_MECH_ABILITIES[0];
+  for(int i = 0; i < 4; i++){
+    deployedMech[i] = 0;
+    enlistedRecruits[i] = 0;
+  }
   homeBase = nullptr;
 };
 
@@ -18,6 +22,10 @@ Faction::Faction(const std::string &factionName, const int &factionPower,
   combatCards = factionCombatCards;
   ability = factionAbility;
   mechAbilities = factionMechAbility;
+  for(int i = 0; i < 4; i++){
+    deployedMech[i] = 0;
+    enlistedRecruits[i] = 0;
+  }
   homeBase = factionHomeBase;
 };
 
