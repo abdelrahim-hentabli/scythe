@@ -21,6 +21,9 @@ class Faction{
     int getCombatCards();
     int getAbility();
     int* getMechAbilities();
+    //Mutators
+    void changeDeployArr(int mech);
+    void changeEnlistArr(int recruit);
 
 
   private:

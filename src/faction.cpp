@@ -76,3 +76,35 @@ std::ostream& operator<<(std::ostream&out, const Faction& f)
   <<std::string( (FACTION_MAT_SIZE - 6 - temp.size()) /2, ' ')<<" / \n";
   return out<<"  "<<std::string(FACTION_MAT_SIZE-4, '-')<<"  ";
 }
+
+int Faction::getPower(){
+  return power;
+}
+
+int Faction::getCombatCards(){
+  return combatCards;
+}
+
+int Faction::getAbility(){
+  return ability;
+}
+
+int* Faction::getMechAbilities(){
+  return mechAbilities;
+}
+
+void Faction::changeDeployArr(int mech){
+  if( mech<0 || mech>3 ){
+    std::cout<<"Unable to deploy that mech in Faction\n";
+    return;
+  }
+  deployedMech[mech]=1;
+}
+
+void Faction::changeEnlistArr(int recruit){
+  if( recruit<0 || recruit>3 ){
+    std::cout<<"Unable to enlist that recruit in Faction\n";
+    return;
+  }
+  enlistedRecruits[recruit]=1;
+}
