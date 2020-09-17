@@ -15,13 +15,17 @@ Player::Player() {
   }
 }
 
-// Player::Player(Faction* f, PlayerMat* p){
-//   faction = f;
-//   playerMat = p;
-//   coins = p->getCoins();
-//   power = f->getPower();
+Player::Player(Faction* f, PlayerMat* p){
+  faction = f;
+  playerMat = p;
+  coins = p->getCoins();
+  power = f->getPower();
+  popularity = p->getPopularity();
+  for(int i = 0; i < 4; i++) {
+    combatCards[i] = 0;
+  }
 
-// }
+}
 
 int* Player::getCombatCards(){
   return combatCards;
