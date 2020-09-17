@@ -5,6 +5,7 @@
 #include "constants.h"
 
 int main(int argc, char  *argv[]){
+  Board();
   Faction* factions[NUMBER_OF_FACTIONS];
   for(int i=0; i < NUMBER_OF_FACTIONS; i++){
     //hex needs to be updated

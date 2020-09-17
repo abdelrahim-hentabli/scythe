@@ -16,7 +16,7 @@ enum Player_Mat { Industrial, Engineering, Patriotic, Innovative, Agricultural};
 enum Top_Row { Move, Bolster, Trade, Produce};
 enum Bot_Row { Upgrade, Deploy, Build, Enlist};
 
-enum Tile_Type { Farm, Tundra, Forest, Mountain, Village, Lake , Base};
+enum Tile_Type {Farm, Tundra, Forest, Mountain, Village, Lake , Base, Factory};
 
 //abilities [5-9] are water walking to those hexes
 const std::string ABILITIES[NUMBER_OF_ABILITIES] = {"Coercion", "Swim", 
@@ -134,5 +134,10 @@ const std::string PLAYER_MAT_NAMES[NUMBER_OF_PLAYER_MATS] =
 const int PLAYER_MAT_RANK[NUMBER_OF_PLAYER_MATS] = {1,2,3,4,5};
 const int PLAYER_MAT_POPULARITY[NUMBER_OF_PLAYER_MATS] = {2,2,2,3,4};
 const int PLAYER_MAT_COINS[NUMBER_OF_PLAYER_MATS] = {4,5,6,5,7};
+
+
+const int BOARD_NUM_ROWS = 9;
+const int BOARD_ROW_SIZES[BOARD_NUM_ROWS] = {2,6,7,8,7,7,7,8,2};
+extern Tile_Type BOARD_TILE_TYPES[BOARD_NUM_ROWS][8];
 
 #endif
