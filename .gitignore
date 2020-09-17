@@ -1,4 +1,5 @@
 *.swp
+**/.vscode
 **/.DS_Store
 a.out
 CMakeCache.txt
