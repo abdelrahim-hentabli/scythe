@@ -2,21 +2,14 @@
 
 Board::Board(){
   
-  hexagons = new Hex*[9];
-  rowSizes = new int[9];
-
-  rowSizes[0] = 2;
-  rowSizes[1] = 6;
-  rowSizes[2] = 7;
-  rowSizes[3] = 8;
-  rowSizes[4] = 7;
-  rowSizes[5] = 7;
-  rowSizes[6] = 7;
-  rowSizes[7] = 8;
-  rowSizes[8] = 2;
+  hexagons = new Hex*[BOARD_NUM_ROWS];
   
-  for(int i = 0; i < 9; i++){
-    hexagons[i] = new Hex[rowSizes[i]];
+  for(int i = 0; i < BOARD_NUM_ROWS; i++){
+    hexagons[i] = new Hex[BOARD_ROW_SIZES[i]];
+    for(int j = 0; j < BOARD_ROW_SIZES[i]; j++){
+      hexagons[i][j].setTileType(BOARD_TILE_TYPES[i][j]);
+    }
   }
+  
 
 }

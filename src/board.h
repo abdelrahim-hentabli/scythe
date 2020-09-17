@@ -4,6 +4,7 @@
 #include <iostream>
 #include <map>
 #include "hex.h"
+#include "constants.h"
 
 class Board{
   public:
