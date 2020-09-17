@@ -1,5 +1,5 @@
 # SCYTHE
-Terminal Boardgame of Scythe
+An in-terminal recreation of the boardgame, Scythe.
 
 ## Dependencies
 This project requires a C++ compiler and CMake.

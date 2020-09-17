@@ -12,12 +12,7 @@ class PlayerMat{
       const int &matPopularity, const int &matCoins, Top_Row fTopRow,
       Bot_Row fBotRow);
     //Operators
-    friend std::ostream& operator <<(std::ostream& out, const PlayerMat& p){
-      out<<p.name<<'\n';
-      out<<"Objective Cards: "<<p.objectiveCards<<"    Popularity: ";
-      out<<p.popularity<<"    Coins: "<<p.coins<<'\n';
-    }
-    //Setters
+    friend std::ostream& operator <<(std::ostream& out, const PlayerMat& p);
     //Getters
     //Top Row Actions
     void move();
@@ -35,8 +30,8 @@ class PlayerMat{
     int objectiveCards;
     int popularity;
     int coins; 
-    Top_Row topRowOrder[4];
-    Bot_Row botRowOrder[4];
+    Top_Row top_row_order[4];
+    Bot_Row bot_row_order[4];
     
 
 };
