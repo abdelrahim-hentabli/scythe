@@ -51,46 +51,6 @@ PlayerMat* Player::getPlayerMat(){
   return playerMat;
 }
 
-void Player::setPower(int val){
-  if(val<0){
-    cout<<"Error setting power for Player\n";
-    return;
-  }
-  power = val;
-}
-
-void Player::setCoins(int val){
-  if(val<0){
-    cout<<"Error setting coins for Player\n";
-    return;
-  }
-  coins = val;
-}
-
-void Player::setPopularity(int val){
-  if(val<0){
-    cout<<"Error setting popularity for Player\n";
-    return;
-  }
-  popularity = val;
-}
-
-void Player::setFaction(Faction* f){
-  if(f == NULL){
-    cout<<"Error setting faction for Player\n";
-    return;
-  }
-  faction = f;
-}
-
-void Player::setPlayerMat(PlayerMat* p){
-  if(p == NULL){
-    cout<<"Error setting player for Player\n";
-    return;
-  }
-  playerMat = p;
-}
-
 void Player::pushCombatCard(int card) {
   if(card<2 || card>5){
     cout<<"Error adding objective card for Player\n";

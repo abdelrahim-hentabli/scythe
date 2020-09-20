@@ -18,12 +18,6 @@ class Player{
     int getPopularity();
     Faction* getFaction();
     PlayerMat* getPlayerMat();
-    //Setters
-    void setCoins(int val);
-    void setPower(int val);
-    void setPopularity(int val);
-    void setFaction(Faction* f);
-    void setPlayerMat(PlayerMat* p);
     //Incrementers & Decrementers 
     void pushCombatCard(int card); 
     void addCoins(int val);
