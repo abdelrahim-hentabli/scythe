@@ -16,6 +16,14 @@ enum Player_Mat { Industrial, Engineering, Patriotic, Innovative, Agricultural};
 enum Top_Row { Move, Bolster, Trade, Produce};
 enum Bot_Row { Upgrade, Deploy, Build, Enlist};
 
+enum Upgrade_Type { Move, //Move 3 times (instead of 2)
+                    Gain, //Gain 2 coins (instead of 1)
+                    BolsterPower, //Bolster for 3 powers (instead of 2)
+                    BolsterCard, //Bolster for 2 combat cards (instead of 1)
+                    Trade, //Trade for 2 popularity (instead of 1)
+                    Produce //Produce on 3 tiles (instead of 2)
+                    };
+
 enum Tile_Type {Farm, Tundra, Forest, Mountain, Village, Lake , Base, Factory};
 
 //abilities [5-9] are water walking to those hexes
