@@ -11,12 +11,10 @@ const int NUMBER_OF_PLAYER_MATS = NUMBER_OF_FACTIONS;
 
 enum Faction_Name { Crimea, Nordic, Polania, Rusviet, Saxony};
 
-enum Player_Mat { Industrial, Engineering, Patriotic, Innovative, Agricultural};
-
+enum Player_Mat { Industrial, Engineering, Patriotic, Mechanical, Agricultural};
 enum Top_Row { Move, Bolster, Trade, Produce};
 enum Bot_Row { Upgrade, Deploy, Build, Enlist};
-
-enum Upgrade_Type { Move, //Move 3 times (instead of 2)
+enum Top_Upgrade { Move, //Move 3 times (instead of 2)
                     Gain, //Gain 2 coins (instead of 1)
                     BolsterPower, //Bolster for 3 powers (instead of 2)
                     BolsterCard, //Bolster for 2 combat cards (instead of 1)
@@ -137,11 +135,13 @@ const int FACTION_ABILITIES[NUMBER_OF_FACTIONS] = {0, 1, 2, 3, 4};
 extern int FACTION_MECH_ABILITIES[NUMBER_OF_FACTIONS][5];
 
 const std::string PLAYER_MAT_NAMES[NUMBER_OF_PLAYER_MATS] = 
-  {"Industrial", "Engineering", "Patriotic", "Innovative", "Agricultural"};
+  {"Industrial", "Engineering", "Patriotic", "Mechanical", "Agricultural"};
 
 const int PLAYER_MAT_RANK[NUMBER_OF_PLAYER_MATS] = {1,2,3,4,5};
 const int PLAYER_MAT_POPULARITY[NUMBER_OF_PLAYER_MATS] = {2,2,2,3,4};
-const int PLAYER_MAT_COINS[NUMBER_OF_PLAYER_MATS] = {4,5,6,5,7};
+const int PLAYER_MAT_COINS[NUMBER_OF_PLAYER_MATS] = {4,5,6,6,7};
+const int PLAYER_MAT_MAX_BOTTOM_COST[NUMBER_OF_PLAYER_MATS][4]; //The maximum/starting cost to do bottom actions
+const int PLAYER_MAT_MIN_BOTTOM_COST[NUMBER_OF_PLAYER_MATS][4]; //The minimum cost to do bottom actions after upgrades
 
 
 const int BOARD_NUM_ROWS = 9;

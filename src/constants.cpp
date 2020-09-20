@@ -16,3 +16,20 @@ Tile_Type BOARD_TILE_TYPES[BOARD_NUM_ROWS][8] = {
   {Base, Village, Base, Base, Base, Base, Base, Base}
 };
 
+// enum Player_Mat { Industrial, Engineering, Patriotic, Mechanical, Agricultural};
+// enum Bot_Row { Upgrade, Deploy, Build, Enlist};
+
+const int PLAYER_MAT_MAX_BOTTOM_COST[NUMBER_OF_PLAYER_MATS][4] = {
+  {3,3,3,4},
+  {3,4,3,3},
+  {2,4,4,3},
+  {3,3,3,4},
+  {2,4,4,3}
+};
+const int PLAYER_MAT_MIN_BOTTOM_COST[NUMBER_OF_PLAYER_MATS][4] = {
+  {2,1,2,2},
+  {2,2,1,2},
+  {2,1,2,2},
+  {2,1,2,2},
+  {2,2,2,1}
+};
